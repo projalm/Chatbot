@@ -1,0 +1,239 @@
+[import](common.lg)
+
+# TextInput_Prompt_iy2wlM()
+[Activity
+    Text = ${TextInput_Prompt_iy2wlM_text()}
+]
+
+# TextInput_Prompt_iy2wlM_text()
+- ```a)Metro cuadrado.
+b)Metro cúbico.
+c)Amperio por metro.
+d)Amperio por metro cuadrado.
+
+```
+# SendActivity_jILO8Q()
+[Activity
+    Text = ${SendActivity_jILO8Q_text()}
+]
+
+# SendActivity_jILO8Q_text()
+- 1. La unidad de volumen en el Sistema Internacional es:
+# SendActivity_IV2g5r()
+[Activity
+    Text = ${SendActivity_IV2g5r_text()}
+]
+
+# SendActivity_IV2g5r_text()
+- 2. ¿En qué año tuvo lugar el descubrimiento de América?
+# TextInput_Prompt_bxzb6G()
+[Activity
+    Text = ${TextInput_Prompt_bxzb6G_text()}
+]
+
+# TextInput_Prompt_bxzb6G_text()
+- ```a)1942.
+b)1249.
+c)1924.
+d)1492.
+
+```
+# SendActivity_rQod7K()
+[Activity
+    Text = ${SendActivity_rQod7K_text()}
+]
+
+# SendActivity_rQod7K_text()
+- 3. ¿Cuál es el peso del cerebro?
+# TextInput_Prompt_ddlpEi()
+[Activity
+    Text = ${TextInput_Prompt_ddlpEi_text()}
+]
+
+# TextInput_Prompt_ddlpEi_text()
+- ```a)Entre 1 kilo y 1,5 kilos.
+b)Entre 2 kilos y 2,5 kilos.
+c)Entre 2,5 kilos y 3 kilos.
+d)Entre 1,5 kilos y 2 kilos.```
+# SendActivity_8XKmPw()
+[Activity
+    Text = ${SendActivity_8XKmPw_text()}
+]
+
+# SendActivity_8XKmPw_text()
+- 4. ¿Dónde se encuentra el Ponte Vecchio?
+# TextInput_Prompt_c9feQl()
+[Activity
+    Text = ${TextInput_Prompt_c9feQl_text()}
+]
+
+# TextInput_Prompt_c9feQl_text()
+- ```a)París.
+b)Florencia.
+c)Londres.
+d)Nueva York.```
+# SendActivity_8WxInJ()
+[Activity
+    Text = ${SendActivity_8WxInJ_text()}
+]
+
+# SendActivity_8WxInJ_text()
+- 5. ¿Cuál de las siguientes es considerada la mayor batalla marítima de la historia? 
+# TextInput_Prompt_Wx2o36()
+[Activity
+    Text = ${TextInput_Prompt_Wx2o36_text()}
+]
+
+# TextInput_Prompt_Wx2o36_text()
+- ```Batalla del Ebro.
+Batalla de Waterloo.
+Batalla de Lepanto.
+Batalla de Trafalgar.
+
+```
+# SendActivity_Li6BXt()
+[Activity
+    Text = ${SendActivity_Li6BXt_text()}
+]
+
+# SendActivity_Li6BXt_text()
+- 6. La dictadura de Franco ocurrió entre:
+# TextInput_Prompt_4WO8Ei()
+[Activity
+    Text = ${TextInput_Prompt_4WO8Ei_text()}
+]
+
+# TextInput_Prompt_4WO8Ei_text()
+- ```a)1938 a 1975.
+b)1939 a1974.
+c)1938 a 1974.
+d)1939 a 1975.```
+# SendActivity_QwCqNw()
+[Activity
+    Text = ${SendActivity_QwCqNw_text()}
+]
+
+# SendActivity_QwCqNw_text()
+- 7. El paso de un líquido a sólido por medio del enfriamiento se denomina:
+# TextInput_Prompt_Hj8siK()
+[Activity
+    Text = ${TextInput_Prompt_Hj8siK_text()}
+]
+
+# TextInput_Prompt_Hj8siK_text()
+- ```a)Solidificación.
+b)Fusión.
+c)Condensación.
+d)Sublimación.
+
+```
+# SendActivity_csC17m()
+[Activity
+    Text = ${SendActivity_csC17m_text()}
+]
+
+# SendActivity_csC17m_text()
+- 8. ¿En qué año comenzó la Segunda Guerra Mundial?
+# TextInput_Prompt_xK36e7()
+[Activity
+    Text = ${TextInput_Prompt_xK36e7_text()}
+]
+
+# TextInput_Prompt_xK36e7_text()
+- ```a)1942.
+b)1941.
+c)1940.
+d)1939.```
+# TextInput_Prompt_F5SDYY()
+[Activity
+    Text = ${TextInput_Prompt_F5SDYY_text()}
+]
+
+# TextInput_Prompt_F5SDYY_text()
+- ```a)Batalla del Ebro.
+b)Batalla de Waterloo.
+c)Batalla de Lepanto.
+d)Batalla de Trafalgar.
+
+```
+# SendActivity_3mT0pi()
+[Activity
+    Text = ${SendActivity_3mT0pi_text()}
+]
+
+# SendActivity_3mT0pi_text()
+- 9. ¿Cuántos grados tiene un ángulo llano?
+# TextInput_Prompt_RAwk1s()
+[Activity
+    Text = ${TextInput_Prompt_RAwk1s_text()}
+]
+
+# TextInput_Prompt_RAwk1s_text()
+- ```a)90.
+b)180.
+c)45.
+d)120.
+
+```
+# SendActivity_ULPWiD()
+[Activity
+    Text = ${SendActivity_ULPWiD_text()}
+]
+
+# SendActivity_ULPWiD_text()
+- ```10. ¿Quiénes se enfrentaron en la Guerra de los Cien Años?
+```
+# TextInput_Prompt_fugODn()
+[Activity
+    Text = ${TextInput_Prompt_fugODn_text()}
+]
+
+# TextInput_Prompt_fugODn_text()
+- ```a)Alemania e Inglaterra.
+b)Francia e Inglaterra.
+c)Francia y Alemania.
+d)Francia e Italia.
+
+```
+# SendActivity_maF49D()
+[Activity
+    Text = ${SendActivity_maF49D_text()}
+]
+
+# SendActivity_maF49D_text()
+- Tu puntaje es: ${user.points} de10
+# SendActivity_qZTCfg()
+[Activity
+    Text = ${SendActivity_qZTCfg_text()}
+]
+
+# SendActivity_qZTCfg_text()
+- Bienvenidoal test
+# SendActivity_DUiaLn()
+[Activity
+    Text = ${SendActivity_DUiaLn_text()}
+]
+
+# SendActivity_DUiaLn_text()
+- Hola de nuevo. tu puntaje en este test fue de ${user.points} Probaras tus conocimientos nuevamente?
+# SendActivity_uPdP1x()
+[Activity
+    Text = ${SendActivity_uPdP1x_text()}
+]
+
+# SendActivity_uPdP1x_text()
+- Comencemos
+# SendActivity_1FMsEI()
+[Activity
+    Text = ${SendActivity_1FMsEI_text()}
+]
+
+# SendActivity_1FMsEI_text()
+- Solo seran algunas preguntas de cutura general y las puntuaremos a 1pt cada pregunta correcta
+# SendActivity_JCwHeL()
+[Activity
+    Text = ${SendActivity_JCwHeL_text()}
+]
+
+# SendActivity_JCwHeL_text()
+- Comencemos

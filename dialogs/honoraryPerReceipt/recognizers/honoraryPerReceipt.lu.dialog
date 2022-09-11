@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_honoraryPerReceipt",
+  "recognizers": {
+    "en-us": "honoraryPerReceipt.en-us.lu",
+    "": "honoraryPerReceipt.en-us.lu"
+  }
+}

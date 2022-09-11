@@ -1,0 +1,13 @@
+{
+    "luis": {
+        "honoraryPerReceipt_en_us_lu": {
+            "appId": "88bc683b-743c-4c78-9aab-9cf8eb72e4e3"
+        },
+        "Empty_en_us_lu": {
+            "appId": "849a8400-da59-4dfa-9980-6e1959d3aa57"
+        },
+        "welcomeDialog_en_us_lu": {
+            "appId": "2f769c88-567d-4595-b28b-568852ff4823"
+        }
+    }
+}

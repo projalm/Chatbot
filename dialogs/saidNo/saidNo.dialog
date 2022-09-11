@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "3TEJeg",
+    "name": "saidNo",
+    "comment": "rechazar con un NO"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "3LeXVT"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "hWs3ye"
+          },
+          "activity": "${SendActivity_hWs3ye()}"
+        }
+      ]
+    }
+  ],
+  "generator": "saidNo.lg",
+  "recognizer": "saidNo.lu.qna",
+  "id": "saidNo"
+}

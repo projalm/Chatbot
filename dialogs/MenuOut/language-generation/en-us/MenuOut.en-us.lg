@@ -1,0 +1,19 @@
+[import](common.lg)
+
+# SendActivity_zxoMV5()
+[Activity
+    Text = ${SendActivity_zxoMV5_text()}
+]
+
+# SendActivity_zxoMV5_text()
+- Desea salir? A donde se quiere dirigir?
+# TextInput_Prompt_5iPbg7()
+[Activity
+    Text = ${TextInput_Prompt_5iPbg7_text()}
+]
+
+# TextInput_Prompt_5iPbg7_text()
+- ```1.Menu de cursos
+2.Menu de Rutas
+3.Test
+4.Preguntas y respuestas de Musa```

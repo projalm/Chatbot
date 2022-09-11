@@ -1,0 +1,235 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Hola que tal, es este es el bot con Node.js
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that.
+# SendActivity_cm6AdQ()
+[Activity
+    Text = ${SendActivity_cm6AdQ_text()}
+]
+
+# SendActivity_cm6AdQ_text()
+- Bienvenido(a) a Musa, una experiencia de aprendizaje móvil. 👋🤩
+# SendActivity_7EWRxE()
+[Activity
+    Text = ${SendActivity_7EWRxE_text()}
+]
+
+# SendActivity_7EWRxE_text()
+- ```Si quieres conocer más de Musa entra aquí👇
+https://holamusa.com/```
+# TextInput_Prompt_gyqvyC()
+[Activity
+    Text = ${TextInput_Prompt_gyqvyC_text()}
+]
+
+# TextInput_Prompt_gyqvyC_text()
+- ```Para mejorar tu experiencia, ¿Cuál es tu nombre?
+
+✍️ Solo escribe un nombre.```
+# SendActivity_xWEb7K()
+[Activity
+    Text = ${SendActivity_xWEb7K_text()}
+]
+
+# SendActivity_xWEb7K_text()
+- 😁 Gracias, ${user.name} Usaré ese nombre de ahora en adelante, ¿estás de acuerdo?
+# TextInput_Prompt_PekKsN()
+[Activity
+    Text = ${TextInput_Prompt_PekKsN_text()}
+    SuggestedActions = SI | NO
+]
+
+# TextInput_Prompt_PekKsN_text()
+- 👇🏽Presiona un botón
+# SendActivity_kyOeYm()
+[Activity
+    Text = ${SendActivity_kyOeYm_text()}
+]
+
+# SendActivity_kyOeYm_text()
+- Perfecto, ${user.name}. Me gusta tu nombre 🤩.
+# SendActivity_g2RGIQ()
+[Activity
+    Text = ${SendActivity_g2RGIQ_text()}
+]
+
+# SendActivity_g2RGIQ_text()
+- ```🤖💬 Musa está diseñada para proteger tus datos personales.
+
+¿Aceptas nuestra Política de confidencialidad y protección de datos personales?
+
+Puedes encontrarla aquí 👇
+```
+# TextInput_Prompt_pjdTkY()
+[Activity
+    Text = ${TextInput_Prompt_pjdTkY_text()}
+    SuggestedActions = ACEPTO | NO ACEPTO
+]
+
+# TextInput_Prompt_pjdTkY_text()
+- 👇🏽Presiona un botón
+# SendActivity_nhSMaG()
+[Activity
+    Text = ${SendActivity_nhSMaG_text()}
+]
+
+# SendActivity_nhSMaG_text()
+- si
+# SendActivity_NUXM3U()
+[Activity
+    Text = ${SendActivity_NUXM3U_text()}
+]
+
+# SendActivity_NUXM3U_text()
+- ¡Perfecto! Antes de empezar te damos un TIP.
+# SendActivity_mHJfid()
+[Activity
+    Text = ${SendActivity_mHJfid_text()}
+]
+
+# SendActivity_mHJfid_text()
+- ```💡TIP Musa:
+
+Verifica que estás ingresando con el número telefónico correcto. Este es el que usó tu organización para darte acceso a Musa. De lo contrario no podrás visualizar ninguna Ruta de contenido.```
+# SendActivity_EQ9tKg()
+[Activity
+    Text = ${SendActivity_EQ9tKg_text()}
+]
+
+# SendActivity_EQ9tKg_text()
+- De la misma forma, si tu número telefónico no está registrado, no podrás visualizar las Rutas de Contenido. En este caso, contáctate con tu organización para que registren tu número telefónico y tengas acceso a Musa.
+# SendActivity_d5z2I6()
+[Activity
+    Text = ${SendActivity_d5z2I6_text()}
+]
+
+# SendActivity_d5z2I6_text()
+- Bienvenido(a)  :)
+# SendActivity_KCFIf1()
+[Activity
+    Text = ${SendActivity_KCFIf1_text()}
+]
+
+# SendActivity_KCFIf1_text()
+- ```A continuación, te mostraré la(s) ruta(s) de contenido seleccionada(s) para ti. 
+Elige el número de la opción que te gustaría llevar. 👇```
+# TextInput_Prompt_nZJtXd()
+[Activity
+    Text = ${TextInput_Prompt_nZJtXd_text()}
+]
+
+# TextInput_Prompt_nZJtXd_text()
+- 1. Demos
+# SendActivity_fNZHR8()
+[Activity
+    Text = ${SendActivity_fNZHR8_text()}
+]
+
+# SendActivity_fNZHR8_text()
+- ```¡Estupendo! Esta ruta contiene los siguiente módulos, ¿a cuál te gustaría acceder hoy? 🤓👍 
+Escribe el número de la opción que te gustaría llevar. 👇```
+# SendActivity_fmSg5l()
+[Activity
+    Text = ${SendActivity_fmSg5l_text()}
+]
+
+# SendActivity_fmSg5l_text()
+- no tienes ruta asignada
+# SendActivity_TORYUr()
+[Activity
+    Text = ${SendActivity_TORYUr_text()}
+]
+
+# SendActivity_TORYUr_text()
+- Ocurrio un error
+# SendActivity_banar2()
+[Activity
+    Attachments = ${SendActivity_banar2_attachment_afqiAv()}
+]
+
+# SendActivity_banar2_attachment_afqiAv()
+[HeroCard
+  images =${dialog.image.src.original}
+]
+
+# NumberInput_Prompt_agbr45()
+[Activity
+    Text = ${NumberInput_Prompt_agbr45_text()}
+]
+
+# NumberInput_Prompt_agbr45_text()
+- Puedes escribir SALIR en cualquier momento para volver a tu lista de rutas de contenido.
+# SendActivity_5kEDK2()
+[Activity
+    Text = ${SendActivity_5kEDK2_text()}
+]
+
+# SendActivity_5kEDK2_text()
+- Buena elección, empecemos 😁
+# SendActivity_3PKrIu()
+[Activity
+    Text = ${SendActivity_3PKrIu_text()}
+]
+
+# SendActivity_3PKrIu_text()
+- No disponible 0
+# SendActivity_kAbzNz()
+[Activity
+    Text = ${SendActivity_kAbzNz_text()}
+]
+
+# SendActivity_kAbzNz_text()
+- No disponible 1
+# SendActivity_Ujg0vd()
+[Activity
+    Text = ${SendActivity_Ujg0vd_text()}
+]
+
+# SendActivity_Ujg0vd_text()
+- No disponible 2
+# SendActivity_CW8wiJ()
+[Activity
+    Text = ${SendActivity_CW8wiJ_text()}
+]
+
+# SendActivity_CW8wiJ_text()
+- ```0. Regresar al menú principal
+1. Curso\-Mindfulness
+2. Refuerzo\-Protocolo en caso de sismo
+3. Tutorial\-Pasos para emitir Recibo por Honorarios```
+# SendActivity_0bh8Ut()
+[Activity
+    Text = ${SendActivity_0bh8Ut_text()}
+]
+
+# SendActivity_0bh8Ut_text()
+- hubo un error
+# SendActivity_VD32Kn()
+[Activity
+    Attachments = ${SendActivity_VD32Kn_attachment_GGRBwq()}
+]
+
+# SendActivity_VD32Kn_attachment_GGRBwq()
+[HeroCard
+  images = ${dialog.sticker.body.stickerList[10].stickerImg}
+]
+
+# SendActivity_xpU1fX()
+[Activity
+    Text = ${SendActivity_xpU1fX_text()}
+]
+
+# SendActivity_xpU1fX_text()
+- Hola ${use.name}. Que tal? Aca otras rutas de aprendizaje para ti

@@ -1,0 +1,280 @@
+[import](common.lg)
+
+# SendActivity_oHQbhL()
+[Activity
+    Text = ${SendActivity_oHQbhL_text()}
+]
+
+# SendActivity_oHQbhL_text()
+- Bienvenido(a) a Musa, una experiencia de aprendizaje móvil. 👋🤩
+# SendActivity_EqYN8x()
+[Activity
+    Text = ${SendActivity_EqYN8x_text()}
+]
+
+# SendActivity_EqYN8x_text()
+- ```Si quieres conocer más de Musa entra aquí👇
+https://holamusa.com/```
+# TextInput_Prompt_ocdgRK()
+[Activity
+    Text = ${TextInput_Prompt_ocdgRK_text()}
+]
+
+# TextInput_Prompt_ocdgRK_text()
+- ```Para mejorar tu experiencia, ¿Cuál es tu nombre?
+
+✍️ Solo escribe un nombre.```
+# SendActivity_fy7mxk()
+[Activity
+    Text = ${SendActivity_fy7mxk_text()}
+]
+
+# SendActivity_fy7mxk_text()
+- 😁 Gracias, ${user.name}. Usaré ese nombre de ahora en adelante, ¿estás de acuerdo?
+# TextInput_Prompt_uznAfo()
+[Activity
+    Text = ${TextInput_Prompt_uznAfo_text()}
+    SuggestedActions = SI | NO
+]
+
+# TextInput_Prompt_uznAfo_text()
+- 👇🏽Presiona un botón
+# SendActivity_L54Yhe()
+[Activity
+    Text = ${SendActivity_L54Yhe_text()}
+]
+
+# SendActivity_L54Yhe_text()
+- Perfecto, ${user.name}. Me gusta tu nombre 🤩.
+# SendActivity_0fARuC()
+[Activity
+    Text = ${SendActivity_0fARuC_text()}
+]
+
+# SendActivity_0fARuC_text()
+- ```🤖💬 Musa está diseñada para proteger tus datos personales.
+
+¿Aceptas nuestra Política de confidencialidad y protección de datos personales?
+
+Puedes encontrarla aquí 👇```
+# TextInput_Prompt_FdLtoj()
+[Activity
+    Text = ${TextInput_Prompt_FdLtoj_text()}
+    SuggestedActions = ACEPTO | NO ACEPTO
+]
+
+# TextInput_Prompt_FdLtoj_text()
+- 👇🏽Presiona un botón
+# SendActivity_cpBvOG()
+[Activity
+    Text = ${SendActivity_cpBvOG_text()}
+]
+
+# SendActivity_cpBvOG_text()
+- ¡Perfecto! Antes de empezar te damos un TIP.
+# SendActivity_XdhfIy()
+[Activity
+    Text = ${SendActivity_XdhfIy_text()}
+]
+
+# SendActivity_XdhfIy_text()
+- ```💡TIP Musa:
+
+Verifica que estás ingresando con el número telefónico correcto. Este es el que usó tu organización para darte acceso a Musa. De lo contrario no podrás visualizar ninguna Ruta de contenido.```
+# SendActivity_7M1GDc()
+[Activity
+    Text = ${SendActivity_7M1GDc_text()}
+]
+
+# SendActivity_7M1GDc_text()
+- De la misma forma, si tu número telefónico no está registrado, no podrás visualizar las Rutas de Contenido. En este caso, contáctate con tu organización para que registren tu número telefónico y tengas acceso a Musa.
+# SendActivity_sSndf4()
+[Activity
+    Text = ${SendActivity_sSndf4_text()}
+]
+
+# SendActivity_sSndf4_text()
+- Bienvenido(a)  :)
+# SendActivity_qm4077()
+[Activity
+    Text = ${SendActivity_qm4077_text()}
+]
+
+# SendActivity_qm4077_text()
+- ```A continuación, te mostraré la(s) ruta(s) de contenido seleccionada(s) para ti. 
+Elige el número de la opción que te gustaría llevar. 👇```
+# TextInput_Prompt_xKmAIA()
+[Activity
+    Text = ${TextInput_Prompt_xKmAIA_text()}
+]
+
+# TextInput_Prompt_xKmAIA_text()
+- 1. Demos
+# SendActivity_enDQxJ()
+[Activity
+    Text = ${SendActivity_enDQxJ_text()}
+]
+
+# SendActivity_enDQxJ_text()
+- Aun no tenemos disponblie este curso, te llevare al curso disponible por el momento
+# SendActivity_O9e8VS()
+[Activity
+    Text = ${SendActivity_O9e8VS_text()}
+]
+
+# SendActivity_O9e8VS_text()
+- Aun no tenemos disponblie este curso, te llevare al curso disponible por el momento
+# SendActivity_AHB3xq()
+[Activity
+    Text = ${SendActivity_AHB3xq_text()}
+]
+
+# SendActivity_AHB3xq_text()
+- Aun no tenemos disponblie este curso, te llevare al curso disponible por el momento
+# SendActivity_wiCSbQ()
+[Activity
+    Text = ${SendActivity_wiCSbQ_text()}
+]
+
+# SendActivity_wiCSbQ_text()
+- hubo un error
+# SendActivity_bBiGjJ()
+[Activity
+    Attachments = ${SendActivity_bBiGjJ_attachment_taaPBZ()}
+]
+
+# SendActivity_bBiGjJ_attachment_taaPBZ()
+[HeroCard
+  images = ${dialog.sticker.body.stickerList[10].stickerImg}
+]
+
+# SendActivity_iPnnKZ()
+[Activity
+    Text = ${SendActivity_iPnnKZ_text()}
+]
+
+# SendActivity_iPnnKZ_text()
+- ```¡Estupendo! Esta ruta contiene los siguiente módulos, ¿a cuál te gustaría acceder hoy? 🤓👍 
+Escribe el número de la opción que te gustaría llevar. 👇```
+# SendActivity_vWtrsD()
+[Activity
+    Text = ${SendActivity_vWtrsD_text()}
+]
+
+# SendActivity_vWtrsD_text()
+- ```1. Regresar al menú principal
+2. Curso: Mindfulness
+3. Refuerzo: Protocolo en caso de sismo
+4. Tutorial: Pasos para emitir Recibo por Honorarios```
+# SendActivity_hcs9um()
+[Activity
+    Text = ${SendActivity_hcs9um_text()}
+]
+
+# SendActivity_hcs9um_text()
+- Perfecto!
+# SendActivity_HPZgNd()
+[Activity
+    Text = ${SendActivity_HPZgNd_text()}
+]
+
+# SendActivity_HPZgNd_text()
+- no es valida esa ruta
+# TextInput_UnrecognizedPrompt_uznAfo()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_uznAfo_text()}
+]
+
+# TextInput_UnrecognizedPrompt_uznAfo_text()
+- Por favor, indique una opcion valida
+# TextInput_InvalidPrompt_uznAfo()
+[Activity
+    Text = ${TextInput_InvalidPrompt_uznAfo_text()}
+]
+
+# TextInput_InvalidPrompt_uznAfo_text()
+- Por favor,indique una opcion valida
+# TextInput_DefaultValueResponse_uznAfo()
+[Activity
+    Text = ${TextInput_DefaultValueResponse_uznAfo_text()}
+]
+
+# TextInput_DefaultValueResponse_uznAfo_text()
+- Ha superado el limite de intentos
+# TextInput_UnrecognizedPrompt_FdLtoj()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_FdLtoj_text()}
+]
+
+# TextInput_UnrecognizedPrompt_FdLtoj_text()
+- Por favor, indique una opcion valida
+# TextInput_InvalidPrompt_FdLtoj()
+[Activity
+    Text = ${TextInput_InvalidPrompt_FdLtoj_text()}
+]
+
+# TextInput_InvalidPrompt_FdLtoj_text()
+- Por favor, indique una opcion valida
+# TextInput_DefaultValueResponse_FdLtoj()
+[Activity
+    Text = ${TextInput_DefaultValueResponse_FdLtoj_text()}
+]
+
+# TextInput_DefaultValueResponse_FdLtoj_text()
+- ha excedido los limites
+# TextInput_Prompt_MKIGt8()
+[Activity
+    Text = ${TextInput_Prompt_MKIGt8_text()}
+]
+
+# TextInput_Prompt_MKIGt8_text()
+- 1.Demos
+# TextInput_UnrecognizedPrompt_MKIGt8()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_MKIGt8_text()}
+]
+
+# TextInput_UnrecognizedPrompt_MKIGt8_text()
+- Por favor, indique una opcion valida
+# TextInput_InvalidPrompt_MKIGt8()
+[Activity
+    Text = ${TextInput_InvalidPrompt_MKIGt8_text()}
+]
+
+# TextInput_InvalidPrompt_MKIGt8_text()
+- por favor indique una opcion valida
+# TextInput_DefaultValueResponse_MKIGt8()
+[Activity
+    Text = ${TextInput_DefaultValueResponse_MKIGt8_text()}
+]
+
+# TextInput_DefaultValueResponse_MKIGt8_text()
+- Ha excedido la cantidad de intentos
+# NumberInput_Prompt_OhbmzO()
+[Activity
+    Text = ${NumberInput_Prompt_OhbmzO_text()}
+]
+
+# NumberInput_Prompt_OhbmzO_text()
+- Puedes escribir SALIR en cualquier momento para volver a tu lista de rutas de contenido.
+# NumberInput_UnrecognizedPrompt_OhbmzO()
+[Activity
+    Text = ${NumberInput_UnrecognizedPrompt_OhbmzO_text()}
+]
+
+# NumberInput_UnrecognizedPrompt_OhbmzO_text()
+- Por favor indique una opcion valida
+# NumberInput_InvalidPrompt_OhbmzO()
+[Activity
+    Text = ${NumberInput_InvalidPrompt_OhbmzO_text()}
+]
+
+# NumberInput_InvalidPrompt_OhbmzO_text()
+- Por favor indique una opcion valida
+# NumberInput_DefaultValueResponse_OhbmzO()
+[Activity
+    Text = ${NumberInput_DefaultValueResponse_OhbmzO_text()}
+]
+
+# NumberInput_DefaultValueResponse_OhbmzO_text()
+- Ha excedido el limite

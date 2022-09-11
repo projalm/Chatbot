@@ -1,0 +1,342 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Vs1oJa",
+    "name": "honoraryPerReceipt",
+    "comment": "Curso de recibos por honorarios"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "6td3FV"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "srhUld"
+          },
+          "condition": "=user.courseRouteOne == \"done\"",
+          "actions": [
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "WiQSto"
+              },
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${TextInput_Prompt_WiQSto()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "property": "user.courserAgainOne",
+              "outputFormat": "=toUpper(this.value)"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "gO4KbL"
+              },
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "VMsX91"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "MenuOut"
+                },
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "e4y2Sf"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperties",
+                  "$designer": {
+                    "id": "6DTksx"
+                  },
+                  "properties": [
+                    "user.start",
+                    "user.valueReceipt1",
+                    "user.valueReceipt2",
+                    "user.courserAgainOne"
+                  ]
+                }
+              ],
+              "condition": "=user.courserAgainOne == \"SI\""
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "nuXfuJ",
+            "comment": "1"
+          },
+          "activity": "${SendActivity_nuXfuJ()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "E6X5N0"
+          },
+          "activity": "${SendActivity_E6X5N0()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "yTDvtS"
+          },
+          "activity": "${SendActivity_yTDvtS()}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "FRzrMy"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "prompt": "${TextInput_Prompt_FRzrMy()}",
+          "property": "user.start",
+          "validations": [
+            "this.value == \"EMPEZAR\" || this.value == \"SALIR\""
+          ],
+          "invalidPrompt": "${TextInput_InvalidPrompt_FRzrMy()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "8UrNM2"
+          },
+          "condition": "=user.start == \"EMPEZAR\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "l8IS6l"
+              },
+              "activityProcessed": true,
+              "dialog": "MenuOut"
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "dsCY7x"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "cP0FrM"
+              },
+              "activity": "${SendActivity_cP0FrM()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "6tdWNQ"
+          },
+          "disabled": false,
+          "maxTurnCount": 10,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_6tdWNQ()}",
+          "invalidPrompt": "${TextInput_InvalidPrompt_6tdWNQ()}",
+          "prompt": "${TextInput_Prompt_6tdWNQ()}",
+          "property": "user.valueReceipt1",
+          "outputFormat": "=toUpper(this.value)",
+          "validations": [
+            "this.value == \"ENTIENDO\""
+          ],
+          "defaultValueResponse": "${TextInput_DefaultValueResponse_6tdWNQ()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "Z2O5qB"
+          },
+          "condition": "=user.valueReceipt1 == \"ENTIENDO\"",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "o7IN4P"
+              },
+              "activity": "${SendActivity_o7IN4P()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "XYoHvZ"
+              },
+              "activityProcessed": true,
+              "dialog": "MenuOut"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "3OxJgz"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "prompt": "${TextInput_Prompt_3OxJgz()}",
+          "property": "user.valueReceipt2"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "dbmTJH"
+          },
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "GufzWN"
+              },
+              "activity": "${SendActivity_GufzWN()}"
+            }
+          ],
+          "condition": "=user.valueReceipt2 == \"SIGUE ESTOS PASOS\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "uZzNRz"
+              },
+              "activityProcessed": true,
+              "dialog": "MenuOut"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "F7SQwV"
+          },
+          "resultProperty": "dialog.api_response",
+          "url": "https://api.pexels.com/v1/photos/2014422",
+          "headers": {
+            "Authorization": "563492ad6f917000010000014da9fd7d3086454cb598b95bb1ffd1cf"
+          },
+          "method": "GET"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "eUuE4n"
+          },
+          "condition": "=dialog.api_response.statusCode == 200",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "qOsPCi"
+              },
+              "property": "dialog.img",
+              "value": "=dialog.api_response.content"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "KeF87K"
+              },
+              "activity": "${SendActivity_KeF87K()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "sSINim"
+              },
+              "activity": "${SendActivity_sSINim()}"
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "eCQAT5"
+              }
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "5XaNmV"
+          },
+          "activity": "${SendActivity_5XaNmV()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "5RRqdw"
+          },
+          "activity": "${SendActivity_5RRqdw()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "HJ1ZpS"
+          },
+          "value": "done",
+          "property": "user.courseRouteOne"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "thyX6p"
+          },
+          "activityProcessed": true,
+          "dialog": "menuBack"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "CPwfvK",
+        "name": "Salir"
+      },
+      "intent": "Salir",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "qwVypp"
+          },
+          "activityProcessed": true,
+          "dialog": "MenuOut"
+        }
+      ],
+      "entities": []
+    }
+  ],
+  "generator": "honoraryPerReceipt.lg",
+  "recognizer": "honoraryPerReceipt.lu.qna",
+  "id": "honoraryPerReceipt"
+}

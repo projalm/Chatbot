@@ -1,0 +1,129 @@
+[import](common.lg)
+
+# SendActivity_kCRxDC()
+[Activity
+    Text = ${SendActivity_kCRxDC_text()}
+]
+
+# SendActivity_kCRxDC_text()
+- Buena elección, empecemos 😁
+# SendActivity_i6oUxW()
+[Activity
+    Text = ${SendActivity_i6oUxW_text()}
+]
+
+# SendActivity_i6oUxW_text()
+- PASOS PARA EMITIR RECIBO POR HONORARIOS 🧾🏡
+# SendActivity_YiN2eW()
+[Activity
+    Text = ${SendActivity_YiN2eW_text()}
+]
+
+# SendActivity_YiN2eW_text()
+- ```📱 Nombre del tutorial:
+Pasos para emitir Recibo por Honorarios
+
+⏱️ Duración del tutorial:
+7 minutos
+
+🤖 Tip Musa:
+Puedes retomar el aprendizaje en cualquier momento
+
+📧 Gmail para consultas sobre problemas técnicos: 
+soporte@holamusa.com```
+# TextInput_Prompt_Bd2LhL()
+[Activity
+    Text = ${TextInput_Prompt_Bd2LhL_text()}
+    SuggestedActions = EMPEZAR
+]
+
+# TextInput_Prompt_Bd2LhL_text()
+- 👇🏽Presiona un botón
+- quedadste aqui
+# SendActivity_GBJURH()
+[Activity
+    Text = ${SendActivity_GBJURH_text()}
+]
+
+# SendActivity_GBJURH_text()
+- ```🙋🏻 El recibo por honorarios es un comprobante de pago💵. Todo trabajador independiente 👩🏻‍🎨 que preste sus servicios a alguna empresa debe utilizarlo. 
+💁🏽‍♂️ Actualmente los recibos por honorarios son electrónicos y deben generarse a través de la Web de la SUNAT. ${user.Id}```
+# TextInput_Prompt_711fRG()
+[Activity
+    Text = ${TextInput_Prompt_711fRG_text()}
+    SuggestedActions = ENTIENDO
+]
+
+# TextInput_Prompt_711fRG_text()
+- 👇🏽Presiona un botón
+# SendActivity_UznXnc()
+[Activity
+    Text = ${SendActivity_UznXnc_text()}
+]
+
+# SendActivity_UznXnc_text()
+- Si sirve
+# SendActivity_rZWMIa()
+[Activity
+    Text = ${SendActivity_rZWMIa_text()}
+]
+
+# SendActivity_rZWMIa_text()
+- Dejaremos donde quedaste
+# SendActivity_TPJlPy()
+[Activity
+    Text = ${SendActivity_TPJlPy_text()}
+]
+
+# SendActivity_TPJlPy_text()
+- Dejaremos donde quedaste
+# TextInput_UnrecognizedPrompt_Bd2LhL()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_Bd2LhL_text()}
+]
+
+# TextInput_UnrecognizedPrompt_Bd2LhL_text()
+- Coloca una opcion valida
+# TextInput_InvalidPrompt_Bd2LhL()
+[Activity
+    Text = ${TextInput_InvalidPrompt_Bd2LhL_text()}
+]
+
+# TextInput_InvalidPrompt_Bd2LhL_text()
+- Coloca una opcion valida
+# TextInput_DefaultValueResponse_Bd2LhL()
+[Activity
+    Text = ${TextInput_DefaultValueResponse_Bd2LhL_text()}
+]
+
+# TextInput_DefaultValueResponse_Bd2LhL_text()
+- Coloca una opcion valida
+# TextInput_UnrecognizedPrompt_711fRG()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_711fRG_text()}
+]
+
+# TextInput_UnrecognizedPrompt_711fRG_text()
+- Colova un aopcion valida
+# TextInput_InvalidPrompt_711fRG()
+[Activity
+    Text = ${TextInput_InvalidPrompt_711fRG_text()}
+]
+
+# TextInput_InvalidPrompt_711fRG_text()
+- Colova un aopcion valida
+# TextInput_DefaultValueResponse_711fRG()
+[Activity
+    Text = ${TextInput_DefaultValueResponse_711fRG_text()}
+]
+
+# TextInput_DefaultValueResponse_711fRG_text()
+- Colova un aopcion valida
+# SendActivity_7wwRGA()
+[Activity
+    Text = ${SendActivity_7wwRGA_text()}
+    SuggestedActions = Empezar
+]
+
+# SendActivity_7wwRGA_text()
+- Empezar

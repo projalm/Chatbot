@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_welcomeDialog",
+  "recognizers": {
+    "en-us": "welcomeDialog.en-us.lu",
+    "": "welcomeDialog.en-us.lu"
+  }
+}

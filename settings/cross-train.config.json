@@ -1,0 +1,51 @@
+{
+  "Empty.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "holaMusa": [
+        "menuBack.en-us",
+        "welcomeDialog.en-us",
+        "saidNo.en-us",
+        "honoraryPerReceipt.en-us",
+        "saidNo.en-us"
+      ],
+      "Salir": [
+        "MenuOut.en-us"
+      ],
+      "test": [
+        "testPoints.en-us"
+      ]
+    }
+  },
+  "honoraryPerReceipt.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "": [
+        "MenuOut.en-us",
+        "MenuOut.en-us",
+        "MenuOut.en-us",
+        "MenuOut.en-us",
+        "menuBack.en-us"
+      ],
+      "Salir": [
+        "MenuOut.en-us"
+      ]
+    }
+  },
+  "welcomeDialog.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "": [
+        "MenuOut.en-us",
+        "MenuOut.en-us",
+        "honoraryPerReceipt.en-us",
+        "honoraryPerReceipt.en-us",
+        "honoraryPerReceipt.en-us",
+        "honoraryPerReceipt.en-us"
+      ],
+      "Salir": [
+        "MenuOut.en-us"
+      ]
+    }
+  }
+}

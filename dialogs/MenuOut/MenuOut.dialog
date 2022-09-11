@@ -1,0 +1,80 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "LwDtrM",
+    "name": "MenuOut",
+    "comment": "Comando de salida"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "g60t9t"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "TMSl5M"
+          },
+          "property": "user.Id",
+          "value": 0
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "zxoMV5"
+          },
+          "activity": "${SendActivity_zxoMV5()}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "5iPbg7"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${TextInput_Prompt_5iPbg7()}",
+          "property": "user.routeCourse"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "w2jPdg"
+          },
+          "condition": "=user.routeCourse == \"1\"",
+          "actions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "M8uwFF"
+              },
+              "activityProcessed": true,
+              "dialog": "honoraryReceipt"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "8QEyh2"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "MenuOut.lg",
+  "recognizer": "MenuOut.lu.qna",
+  "id": "MenuOut"
+}

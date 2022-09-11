@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_hWs3ye()
+[Activity
+    Text = ${SendActivity_hWs3ye_text()}
+]
+
+# SendActivity_hWs3ye_text()
+- Entiendo, estare aqui para cuendo quieras regresar

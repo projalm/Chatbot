@@ -1,0 +1,12 @@
+[import](common.lg)
+
+# TextInput_Prompt_6PqguN()
+[Activity
+    Text = ${TextInput_Prompt_6PqguN_text()}
+]
+
+# TextInput_Prompt_6PqguN_text()
+- ```1.Menu de cursos
+2.Menu de Rutas
+3.Test
+4.Preguntas y respuestas de Musa```

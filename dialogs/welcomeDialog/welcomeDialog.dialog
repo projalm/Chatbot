@@ -1,0 +1,420 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "WL4Gpy",
+    "name": "welcomeDialog",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "SIZvCu"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "oHQbhL"
+          },
+          "activity": "${SendActivity_oHQbhL()}"
+        },
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "wXYdz6"
+          },
+          "resultProperty": "dialog.api_response",
+          "url": "https://messenger.stipop.io/v1/search?userId=9937&q=cute&lang=en&pageNumber=4&limit=13",
+          "method": "GET",
+          "headers": {
+            "apikey": "2df84c126b1f0ff4ecda670c050fbb72"
+          }
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "2A32XC"
+          },
+          "condition": "=dialog.api_response.statusCode == 200",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "jtu2XW"
+              },
+              "property": "dialog.sticker",
+              "value": "=dialog.api_response.content "
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "bBiGjJ"
+              },
+              "activity": "${SendActivity_bBiGjJ()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "wiCSbQ"
+              },
+              "activity": "${SendActivity_wiCSbQ()}"
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "uUgybx"
+              }
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "EqYN8x"
+          },
+          "activity": "${SendActivity_EqYN8x()}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "ocdgRK"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "invalidPrompt": "",
+          "prompt": "${TextInput_Prompt_ocdgRK()}",
+          "property": "user.name"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "fy7mxk"
+          },
+          "activity": "${SendActivity_fy7mxk()}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "uznAfo"
+          },
+          "disabled": false,
+          "maxTurnCount": 10,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_uznAfo()}",
+          "prompt": "${TextInput_Prompt_uznAfo()}",
+          "property": "user.valueOne",
+          "validations": [],
+          "invalidPrompt": "${TextInput_InvalidPrompt_uznAfo()}",
+          "defaultValueResponse": "${TextInput_DefaultValueResponse_uznAfo()}",
+          "outputFormat": "=toUpper(this.value)"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "ckyDXS"
+          },
+          "condition": "=user.valueOne == \"SI\"",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "L54Yhe"
+              },
+              "activity": "${SendActivity_L54Yhe()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "8WImDZ"
+              },
+              "activityProcessed": true,
+              "dialog": "MenuOut"
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "5pu8U2"
+              }
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "0fARuC"
+          },
+          "activity": "${SendActivity_0fARuC()}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "FdLtoj"
+          },
+          "disabled": false,
+          "maxTurnCount": 10,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_FdLtoj()}",
+          "invalidPrompt": "${TextInput_InvalidPrompt_FdLtoj()}",
+          "prompt": "${TextInput_Prompt_FdLtoj()}",
+          "property": "user.valueTwo",
+          "outputFormat": "=toUpper(this.value)",
+          "validations": [],
+          "defaultValueResponse": "${TextInput_DefaultValueResponse_FdLtoj()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "uY7a73"
+          },
+          "condition": "=user.valueTwo == \"ACEPTO\"",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "cpBvOG"
+              },
+              "activity": "${SendActivity_cpBvOG()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "PmK1YU"
+              },
+              "activityProcessed": true,
+              "dialog": "MenuOut"
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "Hamt9C"
+              }
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "XdhfIy"
+          },
+          "activity": "${SendActivity_XdhfIy()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "7M1GDc"
+          },
+          "activity": "${SendActivity_7M1GDc()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "sSndf4"
+          },
+          "activity": "${SendActivity_sSndf4()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "qm4077"
+          },
+          "activity": "${SendActivity_qm4077()}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "MKIGt8"
+          },
+          "disabled": false,
+          "maxTurnCount": 10,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_MKIGt8()}",
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_MKIGt8()}",
+          "invalidPrompt": "${TextInput_InvalidPrompt_MKIGt8()}",
+          "property": "user.routes",
+          "outputFormat": "=trim(this.value)",
+          "validations": [
+            "this.value == \"1\""
+          ],
+          "defaultValueResponse": "${TextInput_DefaultValueResponse_MKIGt8()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "pXeuYx"
+          },
+          "condition": "=user.route == 1",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "hcs9um"
+              },
+              "activity": "${SendActivity_hcs9um()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "HPZgNd"
+              },
+              "activity": "${SendActivity_HPZgNd()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "iPnnKZ"
+          },
+          "activity": "${SendActivity_iPnnKZ()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "vWtrsD"
+          },
+          "activity": "${SendActivity_vWtrsD()}"
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "OhbmzO"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 10,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_OhbmzO()}",
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_OhbmzO()}",
+          "invalidPrompt": "${NumberInput_InvalidPrompt_OhbmzO()}",
+          "property": "user.course",
+          "validations": [
+            "this.value >= 1 && this.value <= 4"
+          ],
+          "defaultValueResponse": "${NumberInput_DefaultValueResponse_OhbmzO()}"
+        },
+        {
+          "$kind": "Microsoft.SwitchCondition",
+          "$designer": {
+            "id": "A79Yyj"
+          },
+          "cases": [
+            {
+              "value": "1",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "enDQxJ"
+                  },
+                  "activity": "${SendActivity_enDQxJ()}"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "4lv2Ay"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "honoraryPerReceipt"
+                }
+              ]
+            },
+            {
+              "value": "2",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "O9e8VS"
+                  },
+                  "activity": "${SendActivity_O9e8VS()}"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "QsXVGq"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "honoraryPerReceipt"
+                }
+              ]
+            },
+            {
+              "value": "3",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "AHB3xq"
+                  },
+                  "activity": "${SendActivity_AHB3xq()}"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "NHfe5u"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "honoraryPerReceipt"
+                }
+              ]
+            },
+            {
+              "value": "4",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "ZrtQWm"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "honoraryPerReceipt"
+                }
+              ]
+            }
+          ],
+          "condition": "=user.course"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "lDEMt0",
+        "name": "Salir"
+      },
+      "intent": "Salir",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "UfC3qJ"
+          },
+          "activityProcessed": true,
+          "dialog": "MenuOut"
+        }
+      ]
+    }
+  ],
+  "generator": "welcomeDialog.lg",
+  "recognizer": "welcomeDialog.lu.qna",
+  "id": "welcomeDialog"
+}

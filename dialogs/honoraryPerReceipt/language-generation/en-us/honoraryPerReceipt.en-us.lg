@@ -1,0 +1,157 @@
+[import](common.lg)
+
+# SendActivity_E6X5N0()
+[Activity
+    Text = ${SendActivity_E6X5N0_text()}
+]
+
+# SendActivity_E6X5N0_text()
+- PASOS PARA EMITIR RECIBO POR HONORARIOS 🧾🏡
+# SendActivity_nuXfuJ()
+[Activity
+    Text = ${SendActivity_nuXfuJ_text()}
+]
+
+# SendActivity_nuXfuJ_text()
+- Buena elección, empecemos 😁
+# SendActivity_yTDvtS()
+[Activity
+    Text = ${SendActivity_yTDvtS_text()}
+]
+
+# SendActivity_yTDvtS_text()
+- ```📱 Nombre del tutorial:
+Pasos para emitir Recibo por Honorarios
+
+⏱️ Duración del tutorial:
+7 minutos
+
+🤖 Tip Musa:
+Puedes retomar el aprendizaje en cualquier momento
+
+📧 Gmail para consultas sobre problemas técnicos: 
+soporte@holamusa.com```
+# TextInput_Prompt_6tdWNQ()
+[Activity
+    Text = ${TextInput_Prompt_6tdWNQ_text()}
+    SuggestedActions = ENTIENDO
+]
+
+# TextInput_Prompt_6tdWNQ_text()
+- 👇🏽Presiona un botón
+# SendActivity_o7IN4P()
+[Activity
+    Text = ${SendActivity_o7IN4P_text()}
+]
+
+# SendActivity_o7IN4P_text()
+- ```🙋🏽‍♂️ IMPORTANTE: Para realizar esta operación debes tener una Clave SOL. 
+💁🏻‍♀️ Si no la tienes, ingresa aquí para generar tu Clave SOL: https://bit.ly/CLAVE_SOL```
+# SendActivity_KeF87K()
+[Activity
+    Attachments = ${SendActivity_KeF87K_attachment_eSgk4t()}
+]
+
+# SendActivity_KeF87K_attachment_eSgk4t()
+[HeroCard
+  images = ${dialog.img.src.original}
+]
+
+# SendActivity_sSINim()
+[Activity
+    Text = ${SendActivity_sSINim_text()}
+]
+
+# SendActivity_sSINim_text()
+- ocurrio un error
+# TextInput_Prompt_3OxJgz()
+[Activity
+    Text = ${TextInput_Prompt_3OxJgz_text()}
+    SuggestedActions = SIGUE ESTOS PASOS
+]
+
+# TextInput_Prompt_3OxJgz_text()
+- 👇🏽Presiona un botón
+# SendActivity_GufzWN()
+[Activity
+    Text = ${SendActivity_GufzWN_text()}
+]
+
+# SendActivity_GufzWN_text()
+- ```1️⃣ Ingresa a  👉🏼 https://www.sunat.gob.pe/ y dale clic en "Operaciones en línea (SOL)".
+
+✍️ Después de ver la imagen que te enviaré, escribe "OK".```
+# TextInput_UnrecognizedPrompt_6tdWNQ()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_6tdWNQ_text()}
+]
+
+# TextInput_UnrecognizedPrompt_6tdWNQ_text()
+- Por favor indique una opcion valida
+# TextInput_InvalidPrompt_6tdWNQ()
+[Activity
+    Text = ${TextInput_InvalidPrompt_6tdWNQ_text()}
+]
+
+# TextInput_InvalidPrompt_6tdWNQ_text()
+- Por favor indique una opcion valida
+# TextInput_DefaultValueResponse_6tdWNQ()
+[Activity
+    Text = ${TextInput_DefaultValueResponse_6tdWNQ_text()}
+]
+
+# TextInput_DefaultValueResponse_6tdWNQ_text()
+- Por favor indique una opcion valida
+# SendActivity_5XaNmV()
+[Activity
+    Text = ${SendActivity_5XaNmV_text()}
+]
+
+# SendActivity_5XaNmV_text()
+- Este es el final del curso. gracias por finalizarlo.
+# SendActivity_5RRqdw()
+[Activity
+    Text = ${SendActivity_5RRqdw_text()}
+]
+
+# SendActivity_5RRqdw_text()
+- Estas son otras rutas de aprendizaje disponibles
+# TextInput_Prompt_WiQSto()
+[Activity
+    Text = ${TextInput_Prompt_WiQSto_text()}
+    SuggestedActions = SI | NO
+]
+
+# TextInput_Prompt_WiQSto_text()
+- ${user.name} ya has visto este curso. Quieres verlo de nuevo?
+# SendActivity_IR0zcg()
+[Activity
+    Text = ${SendActivity_IR0zcg_text()}
+    SuggestedActions = EMPEZAR
+]
+
+# SendActivity_IR0zcg_text()
+- 👇🏽Presiona un botón
+# TextInput_Prompt_FRzrMy()
+[Activity
+    Text = ${TextInput_Prompt_FRzrMy_text()}
+    SuggestedActions = EMPEZAR
+]
+
+# TextInput_Prompt_FRzrMy_text()
+- 👇🏽Presiona un botón
+# TextInput_InvalidPrompt_FRzrMy()
+[Activity
+    Text = ${TextInput_InvalidPrompt_FRzrMy_text()}
+]
+
+# TextInput_InvalidPrompt_FRzrMy_text()
+- Ingrese un valor valido
+# SendActivity_cP0FrM()
+[Activity
+    Text = ${SendActivity_cP0FrM_text()}
+]
+
+# SendActivity_cP0FrM_text()
+- ```🙋🏻 El recibo por honorarios es un comprobante de pago💵. Todo trabajador independiente 👩🏻‍🎨 que preste sus servicios a alguna empresa debe utilizarlo. 
+💁🏽‍♂️ Actualmente los recibos por honorarios son electrónicos y deben generarse a través de la Web de la SUNAT.```
